@@ -1,1 +1,2 @@
-Developed at Swiss Re Bluemix Hackathon
+WIP
+-Developed at Swiss Re Bluemix Hackathon
