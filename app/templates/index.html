@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+
+{% block title %}NewsMeme Dasbhoard{% endblock %}
+
+{% block css %}
+
+  <style type="text/css">
+    body {
+        background: #4c88ef;
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #4c88ef), color-stop(100%, #17e4d9));
+        background: -webkit-linear-gradient(-45deg, #4c88ef 0%, #17e4d9 100%);
+        background: -webkit-linear-gradient(315deg, #4c88ef 0%, #17e4d9 100%);
+        background: linear-gradient(135deg, #4c88ef 0%, #17e4d9 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c88ef', endColorstr='#17e4d9', GradientType=1);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }  
+    audio { width: 400px; }
+
+    input{
+      width: 400px;
+    }
+    img{
+      width: 400px;
+    }
+    .slide_img{
+      width: 400px;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+  
+  {% with msgs = get_flashed_messages() %}
+        {% if msgs %}
+          {%- for msg in msgs %}
+            <div class="alert alert-info">
+              {{ msg }}
+            </div>
+          {% endfor -%}
+        {% endif %}
+      {% endwith %}
+
+  
+
+
+  <div class="row">
+    <div class="col-md-6">
+        <h1>Smart Traveller</h1>
+        
+
+    </div>
+
+    <div class="col-md-6">
+        
+        
+
+  </div>
+
+
+{% endblock %}
+
+{% block script %}
+    
+    
+{% endblock %}
+ 
