@@ -28,15 +28,12 @@ def get_dict(**kwargs):
 
 @app.route('/')
 def home():
-    #select * from salesforce
-    with open("%s/data_dump.json"%DIR_PATH, "rb") as f:
-        data=json.loads(f.read())
     
     data_rows=[
         ['Elon Musk','elon.musk@musk.com','918447789937','100'],
         ['Elon Musk','elon.musk@musk.com','918447789937','100']
     ]
-    return flask.render_template('index.html',data_rows=data_rows,data=data)
+    return flask.render_template('index.html')
 
 
 @app.route('/user/<user_id>')
